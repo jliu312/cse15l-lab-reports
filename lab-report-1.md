@@ -1,4 +1,4 @@
-#Lab Report 1
+# Lab Report 1
 
 ## Install VS Code
 - Install Visual Studio Code at https://code.visualstudio.com/
