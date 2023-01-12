@@ -9,4 +9,4 @@ In my case, VS Code was already installed, so there are Recent directories liste
 
 ## Remotely Connecting
 - Look up your CSE 15L Account at [https://sdacs.ucsd.edu/~icc/index.php](https://sdacs.ucsd.edu/~icc/index.php)
-- Use the _Forgot Username or New Student?_ section and follow instructions to changing your password.
+- Use the "_Forgot Username or New Student?_" section and follow instructions to changing your password.
