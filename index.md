@@ -1,3 +1,3 @@
-Hello World!
+# Hello! Here are my lab reports.
 
-[Here](https://jliu312.github.io/cse15l-lab-reports/page2.html) to go to page 2!
+[Lab Report 1 (1/16)](https://jliu312.github.io/cse15l-lab-reports/lab-report-1.html) 
