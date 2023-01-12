@@ -10,3 +10,10 @@ In my case, VS Code was already installed, so there are Recent directories liste
 ## Remotely Connecting
 - Look up your CSE 15L Account at [https://sdacs.ucsd.edu/~icc/index.php](https://sdacs.ucsd.edu/~icc/index.php)
 - Use the "_Forgot Username or New Student?_" section and follow instructions to changing your password.
+- Open Terminal on VS Code and type in the following command where xxxx is replaced by your course specific account's characters: 
+```
+ssh cs15lxxxx@ieng6.ucsd.edu
+```
+- Terminal should respond with something that looks like this:
+![Image](https://cdn.discordapp.com/attachments/1062889449396129903/1062892496868360292/Screenshot_2023-01-11_at_4.35.15_PM.png)
+- Respond with yes and type in your password (your password won't show but it is keeping track of your keystrokes)
