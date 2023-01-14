@@ -22,4 +22,5 @@ $ ssh cs15lxxxx@ieng6.ucsd.edu
 - You can try some commands like 
 - `ls`
 - `cd [directory]`
-- Explore the directories in the server.
+- Explore the directories in the server; for example, I tried accessing a random directory:
+![Image](https://cdn.discordapp.com/attachments/1062889449396129903/1063726335832358972/Screenshot_2023-01-13_at_11.48.36_PM.png)
