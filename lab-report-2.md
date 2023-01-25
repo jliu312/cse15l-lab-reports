@@ -9,7 +9,7 @@ Which methods in your code are called
 What the values of the relevant arguments to those methods are, and the values of any relevant fields of the class
 If those values change, how they change by the time the request is done processing --> 
 
-Here's my code for my simple search engine: 
+### **Here's my code for my simple search engine:**
 
 ```
 import java.io.IOException;
@@ -62,7 +62,7 @@ class SearchEngine {
     }
 }
 ```
-**Here's an example use of my simple search engine:**\
+### **Here's an example use of my simple search engine:**
 All of the following URL requests go through the handleRequest(URI url) method
 
 **Adding "pineapple" to the list**
