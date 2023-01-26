@@ -59,3 +59,62 @@ All of the following URL requests go through the handleRequest(URI url) method
 
 ![Image](https://cdn.discordapp.com/attachments/1062889449396129903/1067962336280858676/Screenshot_2023-01-25_at_4.20.59_PM.png)
 
+## Part 2
+<!-- Choose one of the bugs from lab 3.
+
+Provide:
+
+A failure-inducing input for the buggy program, as a JUnit test and any associated code (write it as a code block in Markdown)
+An input that doesn’t induce a failure, as a JUnit test and any associated code (write it as a code block in Markdown)
+The symptom, as the output of running the tests (provide it as a screenshot of running JUnit with at least the two inputs above)
+The bug, as the before-and-after code change required to fix it (as two code blocks in Markdown)
+Briefly describe why the fix addresses the issue. -->
+
+### **The following tester method would fail the JUnit test.**
+```
+double[] input1 = {1.0, 1.0, 2.0, 3.0};
+assertEquals(2.0, ArrayExamples.averageWithoutLowest(input), 0.0);
+```
+### **Whereas this JUnit test would not induce a failure.**
+```
+double[] input2 = {1.0, 2.0, 3.0};
+assertEquals(2.5, ArrayExamples.averageWithoutLowest(input2), 0.0);
+```
+Leads to this error from JUnit:
+![Image](https://cdn.discordapp.com/attachments/1062889449396129903/1067984955046633542/Screenshot_2023-01-25_at_5.50.48_PM.png)
+
+The original buggy code was:
+```
+static double averageWithoutLowest(double[] arr) {
+    if(arr.length < 2) { return 0.0; }
+    double lowest = arr[0];
+    for(double num: arr) {
+      if(num < lowest) { lowest = num; }
+    }
+    double sum = 0;
+    for(double num: arr) {
+      if(num != lowest) { sum += num; }
+    }
+    return sum / (arr.length - 1);
+  }
+  ```
+
+I fixed it to be:
+```
+static double averageWithoutLowest(double[] arr) {
+    if(arr.length < 2) { return 0.0; }
+    double lowest = arr[0];
+    for(double num: arr) {
+      if(num < lowest) { lowest = num; }
+    }
+    double sum = 0;
+    for(double num: arr) {
+      sum += num;
+    }
+    sum -= lowest;
+    return sum / (arr.length - 1);
+  }
+```
+- I deleted the if statement within the for loop and then just subtracted the lowest number.
+- The problem with the original code was that when there was that if there were two values that coincided with lowest, it would not include both of them.
+- My fix just includes all and subtracts the lowest so the problem will no longer exist.
