@@ -116,8 +116,8 @@ static double averageWithoutLowest(double[] arr) {
   }
 ```
 - I deleted the if statement within the for loop and then just subtracted the lowest number.
-- The problem with the original code was that when there was that if there were two values that coincided with lowest, it would not include both of them.
-- My fix just includes all and subtracts the lowest so the problem will no longer exist.
+- The problem with the original code was that when there was that if there were two or more values that coincided with lowest, it would not include both of them.
+- My fix includes all the values and subtracts the lowest so it will only remove one value
 
 ## Part 3
 - Week 2 introduced me to the URIHandler interface in Java. I learned how to handle URI/URLs in Java and a simple overview of how they work with queries and other simple features.
