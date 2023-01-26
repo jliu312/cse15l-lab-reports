@@ -50,7 +50,7 @@ All of the following URL requests go through the handleRequest(URI url) method
 - This runs through the handleRequest() method and the first if statement
 - Now, str is "hello \n"
 
-![Image](https://cdn.discordapp.com/attachments/1062889449396129903/1067962310271967333/Screenshot_2023-01-25_at_4.20.51_PM.png)
+![Image](https://cdn.discordapp.com/attachments/1062889449396129903/1068015468549521418/Screenshot_2023-01-25_at_7.52.05_PM.png)
 
 
 **Adding "world"**
