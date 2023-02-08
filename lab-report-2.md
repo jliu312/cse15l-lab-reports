@@ -25,7 +25,9 @@ class Handler implements URLHandler {
             if (parameters[0].equals("s")) {
                 str = str + parameters[1] + "\n";
             }
-        } 
+        } else {
+          return str + "\nuse /add-message?s= to add to the string";
+        }
         return str;
     }
 }
@@ -47,8 +49,9 @@ class StringServer {
 All of the following URL requests go through the handleRequest(URI url) method
 
 **Adding "hello"**
-- This runs through the handleRequest() method and the first if statement
-- Now, str field is "hello \n"
+- This runs through the handleRequest() method and the first if statement since it has "/add-message"
+- Then it goes through the next if statement since the first parameter is "s" 
+- Then the str field is "hello \n"
 
 ![Image](https://cdn.discordapp.com/attachments/1062889449396129903/1068015468549521418/Screenshot_2023-01-25_at_7.52.05_PM.png)
 
@@ -71,11 +74,13 @@ The bug, as the before-and-after code change required to fix it (as two code blo
 Briefly describe why the fix addresses the issue. -->
 
 ### **The following tester method would fail the JUnit test.**
+We would initially remove the smallest element (1.0), and the average should be (1.0 + 2.0 + 3.0)/3 = 2.0. However, the method returns 3.6666. This is because the method removes all doubles equal to the smallest element, so it removes both 1.0s, leading to the erroneous calculation.
 ```
 double[] input1 = {1.0, 1.0, 2.0, 3.0};
 assertEquals(2.0, ArrayExamples.averageWithoutLowest(input), 0.0);
 ```
 ### **Whereas this JUnit test would not induce a failure.**
+This method does not induce a failure because there is only one instance of the smallest element, 1.0. Therefore, it will function correctly and get the correct 2.5 average.
 ```
 double[] input2 = {1.0, 2.0, 3.0};
 assertEquals(2.5, ArrayExamples.averageWithoutLowest(input2), 0.0);
