@@ -85,7 +85,7 @@ This method does not induce a failure because there is only one instance of the 
 double[] input2 = {1.0, 2.0, 3.0};
 assertEquals(2.5, ArrayExamples.averageWithoutLowest(input2), 0.0);
 ```
-Leads to this error from JUnit:
+### **Leads to this error from JUnit:**
 ![Image](https://cdn.discordapp.com/attachments/1062889449396129903/1067984955046633542/Screenshot_2023-01-25_at_5.50.48_PM.png)
 
 The original buggy code was:
