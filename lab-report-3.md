@@ -56,7 +56,7 @@ written_2/travel_guides/berlitz2/Canada-WhereToGo.txt
 
 ### **Case Insensitive (-i)**
 Searches for any string that matches given string, case insensitive
-- Example 1: 
+- Here's an example:
 
 ```
 $ grep -lr "lucayans" #returns nothing
