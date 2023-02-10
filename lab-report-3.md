@@ -93,5 +93,32 @@ skill-demo1-server/skill-demo1-data/written_2/travel_guides/berlitz1/WhereToItal
 ```
 
 - In this case, the "-i" is useful since it allows the user to only need one command to search for all capitalizations of a word. 
-- In the grep without "-i", some many capitalizations are omitted. 
+- In the grep without "-i", some capitalizations are omitted. 
 
+
+### **Count (-c)**
+Counts the number of instances of given string in selected file(s)
+- Can be useful to produce a concise overview of number of instances 
+- Looks like this for one specific file:
+```
+$ grep -c "Lucayans" written_2/travel_guides/berlitz2/Bahamas-History.txt 
+
+2
+```
+- Returns the 2 instances of "Lucayans" in the given file. 
+
+- If we combine "-c" with "-r", it looks like this: 
+
+```
+$ grep -cr "Lucayans"
+
+Algarve-History.txt:0
+Algarve-Intro.txt:0
+Algarve-WhatToDo.txt:0
+Algarve-WhereToGo.txt:0
+Amsterdam-History.txt:0
+Amsterdam-Intro.txt:0
+Amsterdam-WhatToDo.txt:0
+#... rest is truncated
+```
+- Where it shows the specific number for each file, including 0s. 
