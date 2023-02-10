@@ -52,7 +52,7 @@ written_2/travel_guides/berlitz2/Bahamas-WhereToGo.txt
 written_2/travel_guides/berlitz2/Canada-WhereToGo.txt
 ```
 
-- Imagine multiple lines for each file highlighting where the text is, especially for files with mulitple instances of the text(or try it yourself without the "-l")
+- Imagine multiple lines for each file highlighting where the text is, especially for files with mulitple instances of the text (or try it yourself without the "-l")
 
 ### **Case Insensitive (-i)**
 Searches for any string that matches given string, case insensitive
