@@ -8,9 +8,9 @@ Keys pressed: <up><up><up><up><enter>, <up><up><up><up><enter>
 The javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java command was 4 up in the search history, so I used up arrow to access it. Then the java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore command was 4 up in the history, so I accessed and ran it in the same way.
 
 Add this lab report to your Github Pages site, and submit a PDF of it as usual. -->
-
+## My Solution to the lab challenge
 ### **Log into ieng6**
-Keys Pressed: \
+**Keys Pressed:** \
 ```<ctrl+r> s <enter>```
 
 The ssh command has been used many times, so it's stored in my bash history. With a simple search for ```s```, I'm able to access that command. 
@@ -18,7 +18,7 @@ The ssh command has been used many times, so it's stored in my bash history. Wit
 ![](https://cdn.discordapp.com/attachments/889055402765991946/1079532092569952297/Screenshot_2023-02-26_at_2.35.04_PM.png)
 
 ### **Clone your fork of the repository from your Github account**
-Keys Pressed: \
+**Keys Pressed:** \
  ```git clone <cmd+v> <enter>```  \
 (Repo URL was already in clipboard)
 
@@ -27,19 +27,19 @@ I typed out git clone and then pasted the already copied repository URL to speed
 ![](https://cdn.discordapp.com/attachments/889055402765991946/1079532724886454412/Screenshot_2023-02-26_at_2.37.34_PM.png)
 
 ### **Run the tests, demonstrating that they fail**
-Keys Pressed: \
+**Keys Pressed:** \
 ```cd l <tab> <enter>``` \
 ```<ctrl+r> javac - <enter>``` \
 ```<ctrl+r> java - <enter>```
 
 The first line becomes ```cd lab7/```. Tabbing allows bash to autocomplete the directory that I change into.  \
-The second and third lines searche for bash history for the ```javac``` and ```java``` commands with the correct classpath respectively. \
-They become: ```javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java``` and ```java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests```
+The second and third lines search for bash history for the ```javac``` and ```java``` commands with the correct classpath respectively. \
+They become: ```javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java``` and ```java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests``` respectively.
 
 ![](https://cdn.discordapp.com/attachments/889055402765991946/1079533123861225602/Screenshot_2023-02-26_at_2.39.09_PM.png)
 
 ### **Edit the code file to fix the failing test**
-Keys Pressed: \
+**Keys Pressed:** \
 ```nano Li <tab> .j <tab> <enter> ``` \
 ```<ctrl+w> while (index2 <enter>``` \
 ```<down>``` 2 times, ```<right>``` 8 times \
@@ -54,7 +54,7 @@ Then, using ```<ctrl+o> <enter>``` I save the file and leave the nano editor wit
 
 ### **Run the tests, demonstrating that they now succeed**
 
-Keys Pressed: \
+**Keys Pressed:** \
 ```javac L <tab> .j <tab> <enter> ``` \
 ```<up>``` x3 ```<enter>```
 
@@ -66,10 +66,12 @@ Since we just ran the ```java -cp``` command earlier to run the Tester file, we 
 
 ### **Commit and push the resulting change to your Github account**
 
-Keys Pressed: \
+**Keys Pressed:** \
 ```git add L <tab> .j <tab> <enter>``` \
 ```git commit -m “fixed” <enter>``` \
 ```git push <enter>``` \
 Once again, I allow bash to autocomplete ```ListExamples.java```, which makes the first line ```git add ListExamples.java```. \
 Then, I commit the added file with the message ```"fixed"```. \
 Finally, I push the commit to GitHub with ```git push```. 
+
+![](https://cdn.discordapp.com/attachments/889055402765991946/1079537885000249435/Screenshot_2023-02-26_at_2.58.04_PM.png)
