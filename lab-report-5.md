@@ -1,5 +1,5 @@
 # Lab Report 5
-## **Find Command Options**
+## **`Find` Command Options**
 
 ### **Search for a specific type: `-type`**
 Searches for files of a specific type. \
