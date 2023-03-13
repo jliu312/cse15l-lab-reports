@@ -9,3 +9,5 @@
 [Lab Report 3 (2/13)](https://jliu312.github.io/cse15l-lab-reports/lab-report-3.html)
 
 [Lab Report 4 (2/27)](https://jliu312.github.io/cse15l-lab-reports/lab-report-4.html)
+
+[Lab Report 4 (3/13)](https://jliu312.github.io/cse15l-lab-reports/lab-report-5.html)
