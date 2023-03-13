@@ -85,7 +85,8 @@ written_2/travel_guides/berlitz2/Canada-WhereToGo.txt
 
 - This looks for all files greater than 200 kilobytes, which returns only 3 files. 
 
-- Anohter example, but this time with `-`
+- Another example, but this time with `-`
+
 ```
 $find written_2 -size -800c
 
